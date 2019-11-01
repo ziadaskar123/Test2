@@ -1,13 +1,27 @@
 {
-  "name": "Test",
-  "description": "Test",
-  "version": "11.3.0",
-  "main": "bot.js",
+  "name": "discord-kicker-bot",
+  "version": "1.0.0",
+  "description": "Kicker bot for Discord",
+  "main": "index.js",
   "scripts": {
-    "start": "node bot.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taokakao/discord-kicker-bot.git"
+  },
+  "author": "taokakao@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taokakao/discord-kicker-bot/issues"
+  },
+  "homepage": "https://github.com/taokakao/discord-kicker-bot#readme",
   "dependencies": {
-    "discord.js": "11.1.0",
-    "request": "2.81.0"
+    "discord.js": "^11.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0"
   }
 }

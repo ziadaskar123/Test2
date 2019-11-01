@@ -13,16 +13,11 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
-} if (message.content.startsWith(config.prefix + "avatar")) {
-      if (!message.mentions.users.size) {
-        const avatarAuthor = new Discord.RichEmbed()
-      .setColor(0x333333)
-      .setAuthor(message.author.username)
-      .setImage(message.author.avatarURL)
-        message.channel.send(avatarAuthor);
-        let mention = message.mentions.members.first();
-        const avatarMention = new Discord.RichEmbed()
+ if (message.content.startsWith(config.prefix + 'avatar')) {
+    const user = message.mentions.users.first() || message.author;
+    const avatarEmbed = new Discord.RichEmbed()
         .setColor(0x333333)
-        .setAuthor(mention.user.username)
-        .setImage(mention.user.avatarURL)
-        message.channel.send(avatarMention);
+        .setAuthor(user.username)
+        .setImage(user.avatarURL);
+    message.channel.send(avatarEmbed);
+}      

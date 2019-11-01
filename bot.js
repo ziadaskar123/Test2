@@ -13,11 +13,3 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
- if (message.content.startsWith(config.prefix + 'avatar')) {
-    const user = message.mentions.users.first() || message.author;
-    const avatarEmbed = new Discord.RichEmbed()
-        .setColor(0x333333)
-        .setAuthor(user.username)
-        .setImage(user.avatarURL);
-    message.channel.send(avatarEmbed);
-}      

@@ -4,7 +4,7 @@ client.on('ready', () => {
   console.log('I am ready!');
 });
 client.on('message', message => {
-  if (message.content === 'what is my avatar') {
+  if (message.content === 'Avatar') {
     message.reply(message.author.avatarURL);
   }
 });

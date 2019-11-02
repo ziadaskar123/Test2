@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'Roy Check DM') {
-    	message.reply('ROY CHECK DM YOU NOOB ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY @Roy#2529  ');
+    	message.reply('ROY CHECK DM YOU NOOB ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY @Roy#2529 ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY ROY');
   	}
 });
 

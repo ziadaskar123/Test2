@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'Roy Check DM') {
-    	message.reply('@Roy#2529 @Roy#2529 @Roy#2529 @Roy#2529 @Roy#2529 @Roy#2529 @Roy#2529 ');
+    	message.reply('@Roy#2529 ');
   	}
 });
 
